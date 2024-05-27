@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursed Sintezator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1 class="title_txt">PLAY ON IT!</h1>
+    <div id="sintezator">
+        <div id="white_keys">
+            <button onclick="playClcSnd()" id="button_q" class="majorkey">
+                <p class="what_key_press">Q</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_w" class="majorkey">
+                <p class="what_key_press">W</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_e" class="majorkey">
+                <p class="what_key_press">E</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_r" class="majorkey">
+                <p class="what_key_press">R</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_t" class="majorkey">
+                <p class="what_key_press">T</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_y" class="majorkey">
+                <p class="what_key_press">Y</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_u" class="majorkey">
+                <p class="what_key_press">U</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_i" class="majorkey">
+                <p class="what_key_press">I</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_o" class="majorkey">
+                <p class="what_key_press">O</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_p" class="majorkey">
+                <p class="what_key_press">P</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_z" class="majorkey">
+                <p class="what_key_press">Z</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_x" class="majorkey">
+                <p class="what_key_press">X</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_c" class="majorkey">
+                <p class="what_key_press">C</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_v" class="majorkey">
+                <p class="what_key_press">V</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_b" class="majorkey">
+                <p class="what_key_press">B</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_n" class="majorkey">
+                <p class="what_key_press">N</p>
+            </button>
+            <button onclick="playClcSnd()" id="button_m" class="majorkey">
+                <p class="what_key_press">M</p>
+            </button>
+        </div>
+
+        <div id="black_keys">
+            <div class="double_black">
+                <button onclick="playClcSnd()" id="button_2" class="minorkey">
+                    <p class="what_key_press">2</p>
+                </button>
+                <button onclick="playClcSnd()" id="button_3" class="minorkey">
+                    <p class="what_key_press">3</p>
+                </button>
+            </div>
+            <div class="triple_black">
+                <button onclick="playClcSnd()" id="button_5" class="minorkey">
+                    <p class="what_key_press">5</p>
+                </button>
+                <button onclick="playClcSnd()" id="button_6" class="minorkey">
+                    <p class="what_key_press">6</p>
+                </button>
+                <button onclick="playClcSnd()" id="button_7" class="minorkey">
+                    <p class="what_key_press">7</p>
+                </button>
+            </div>
+            <div class="double_black">
+                <button onclick="playClcSnd()" id="button_9" class="minorkey">
+                    <p class="what_key_press">9</p>
+                </button>
+                <button onclick="playClcSnd()" id="button_0" class="minorkey">
+                    <p class="what_key_press">0</p>
+                </button>
+            </div>
+            <div class="triple_black">
+                <button onclick="playClcSnd()" id="button_s" class="minorkey">
+                    <p class="what_key_press">S</p>
+                </button>
+                <button onclick="playClcSnd()"  id="button_d" class="minorkey">
+                    <p class="what_key_press">D</p>
+                </button>
+                <button onclick="playClcSnd()"  id="button_f" class="minorkey">
+                    <p class="what_key_press">F</p>
+                </button>
+            </div>
+            <div class="double_black">
+                <button onclick="playClcSnd()"  id="button_h" class="minorkey">
+                    <p class="what_key_press">H</p>
+                </button>
+                <button onclick="playClcSnd()"  id="button_j" class="minorkey">
+                    <p class="what_key_press">J</p>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <button id="btn_changeIns" onclick="changeIns()">Mode:piano</button>
+    <button id="open_redactor" onclick="openRedactor()">Redactor:closed</button>
+    <div id="menu_full">
+        <div>
+            <p class="sg_txt">Sound speed:</p>
+            <div style="display: flex;">
+                <input oninput="changePitch()" id="pitch_range" type="range" step="0.01" min="0.1" max="16" value="1">
+                <p id="picth_range_text" class="sg_txt">1</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <!-- ok -->
+
+</body>
+<script src="script.js"></script>
+</html>
