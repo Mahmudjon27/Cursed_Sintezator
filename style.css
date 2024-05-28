@@ -153,17 +153,85 @@ body{
 }
 
 #menu_full{
-    height: 300px;
-    border: 1px solid black;
+    height: 0px;
+    /* border: 1px solid black; */
     overflow: hidden;
     transition: 0.3s all ease-in-out;
 }
 
 .sg_txt{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Segoe UI';
 }
 
 #pitch_range{
     background-color: gray;
 }
+
+.top_menu{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.re_pitch_val{
+    width: 150px;
+    padding: 30px;
+    background-color: darkgray;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    position: fixed;
+    top: 20%;
+    right: 0;
+}
+
+#re_mode_cho {
+    margin: 0 10% 0 10%;
+    height: 50px;
+    width: 150px;
+    padding: 3px;
+}
+
+#makeMelBtn{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    margin: 2% 5% 2% 5%;
+}
+
+#makeMelBtn:hover{
+    background-color: darkgreen;
+}
+
+#eraseMelBtn{
+    background-color: red;
+}
+
+#eraseMelBtn:hover{
+    background-color: darkred;
+}
+
+
+#PlayMelBtn{
+    background-color: blue;
+}
+
+#PlayMelBtn:hover{
+    background-color: darkblue;
+}
+
+.melody_btn{
+    width: 100px;
+    height: 100px;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    margin: 2% 5% 2% 5%;
+    transition: 0.2s all ease-in-out;
+}
+
